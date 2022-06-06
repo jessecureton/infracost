@@ -246,6 +246,10 @@ func TestBreakdownTerragruntHCLDepsOutput(t *testing.T) {
 	GoldenFileCommandTest(t, testutil.CalcGoldenFileTestdataDirName(), []string{"breakdown", "--path", path.Join("./testdata", testutil.CalcGoldenFileTestdataDirName())}, nil)
 }
 
+func TestBreakdownTerragruntHCLDepsOutputMocked(t *testing.T) {
+	GoldenFileCommandTest(t, testutil.CalcGoldenFileTestdataDirName(), []string{"breakdown", "--path", path.Join("./testdata", testutil.CalcGoldenFileTestdataDirName())}, nil)
+}
+
 func TestBreakdownTerragruntSkipPaths(t *testing.T) {
 	GoldenFileCommandTest(
 		t,
